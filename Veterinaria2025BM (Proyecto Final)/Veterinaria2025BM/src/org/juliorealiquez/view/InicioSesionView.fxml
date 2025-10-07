@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="957.0" stylesheets="@../resource/EsitlosCss.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juliorealiquez.controller.InicioSesionController">
+   <children>
+      <ImageView fitHeight="549.0" fitWidth="618.0" layoutX="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/veterinario-sexo-femenino-que-da-inyeccion-al-perro-clinica_23-2147928589.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="550.0" fitWidth="627.0" layoutX="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/background%20negro.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="550.0" prefWidth="338.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="123.0" layoutY="248.0" text="Iniciar sesión" textFill="#616161">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsuario" layoutX="52.0" layoutY="285.0" prefHeight="25.0" prefWidth="238.0" promptText="Usuario" style="-fx-background-color: #00000000;" />
+            <Separator layoutX="52.0" layoutY="342.0" prefHeight="3.0" prefWidth="238.0" />
+            <Separator layoutX="52.0" layoutY="312.0" prefHeight="3.0" prefWidth="238.0" />
+            <CheckBox layoutX="52.0" layoutY="354.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="88.0" text="Recuérdame" textFill="#616161">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="btnInicioSesion" layoutX="91.0" layoutY="394.0" mnemonicParsing="false" onAction="#botonIniciarSesion" prefHeight="49.0" prefWidth="161.0" styleClass="estiloBoton1" text="Iniciar sesión" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="68.0" fitWidth="123.0" layoutX="109.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo%20kinal.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="55.0" layoutY="520.0" text="Fundación Tecnologíca Laboral Kinal - 2021549" textFill="#616161">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtContrasenia" layoutX="52.0" layoutY="315.0" prefHeight="25.0" prefWidth="238.0" promptText="Contraseña" style="-fx-background-color: #00000000;" />
+            <ImageView fitHeight="155.0" fitWidth="192.0" layoutX="75.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/kinal%20pets_logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnApagar" layoutX="47.0" layoutY="34.0" mnemonicParsing="false" onAction="#botonApagar" prefHeight="30.0" prefWidth="44.0" styleClass="estiloBoton2">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/exit_9601565.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRegistrarce" layoutX="214.0" layoutY="352.0" mnemonicParsing="false" onAction="#botonRegistrarce" prefHeight="16.0" prefWidth="76.0" style="-fx-background-color: #ffffffff;" text="Registrarce">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="550.0" layoutY="223.0" text="Kinal Pets" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="288.0" text="¡El cuidado que tu mascota merece!" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="957.0" stylesheets="@../resource/EsitlosCss.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juliorealiquez.controller.AgregarMascotaController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="957.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Realizar%20Cita_Mesa%20de%20trabajo%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="139.0" layoutX="666.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/kinal%20pets_logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="183.0" layoutY="58.0" text="Agregar Mascota" textFill="#a34b24">
+         <font>
+            <Font name="Comic Sans MS Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreMascotaField" layoutX="119.0" layoutY="146.0" prefHeight="25.0" prefWidth="174.0" promptText="Nombre de la mascota" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="117.0" layoutY="173.0" prefHeight="3.0" prefWidth="174.0" />
+      <TextField fx:id="razaField" layoutX="109.0" layoutY="187.0" prefHeight="25.0" prefWidth="101.0" promptText="Raza" style="-fx-background-color: #00000000;" />
+      <Label layoutX="76.0" layoutY="193.0" text="RZ." />
+      <Label layoutX="77.0" layoutY="150.0" text="Nom." />
+      <Separator layoutX="108.0" layoutY="214.0" prefHeight="3.0" prefWidth="101.0" />
+      <Separator layoutX="390.0" layoutY="214.0" prefHeight="3.0" prefWidth="123.0" />
+      <Label layoutX="348.0" layoutY="191.0" text="F.Nac." />
+      <TextField fx:id="especieField" layoutX="341.0" layoutY="144.0" prefHeight="25.0" prefWidth="174.0" promptText="Especie" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="339.0" layoutY="171.0" prefHeight="3.0" prefWidth="174.0" />
+      <Label layoutX="309.0" layoutY="148.0" text="Sp." />
+      <TextField fx:id="sexoField" layoutX="244.0" layoutY="187.0" prefHeight="25.0" prefWidth="101.0" promptText="Sexo" style="-fx-background-color: #00000000;" />
+      <Label layoutX="215.0" layoutY="191.0" text="Sex." />
+      <Separator layoutX="244.0" layoutY="214.0" prefHeight="3.0" prefWidth="101.0" />
+      <TextField fx:id="colorField" layoutX="105.0" layoutY="230.0" prefHeight="25.0" prefWidth="110.0" promptText="Color" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="105.0" layoutY="257.0" prefHeight="3.0" prefWidth="110.0" />
+      <Label layoutX="77.0" layoutY="234.0" text="Col." />
+      <Label layoutX="151.0" layoutY="106.0" text="Rellene los siguientes aspectos de la mascota:" textFill="#a34b24">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMusica" layoutX="909.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonMusica" prefHeight="39.0" prefWidth="36.0" style="-fx-background-color: #00000000;" styleClass="estiloBoton2">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/musica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarCliente" alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="154.0" layoutY="511.0" mnemonicParsing="false" onAction="#botonAgregarCliente" prefHeight="39.0" prefWidth="183.0" styleClass="estiloBoton4" text="Agregar Cliente">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/agregar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnVolver" graphicTextGap="14.0" layoutX="32.0" layoutY="511.0" mnemonicParsing="false" onAction="#botonVolver" prefHeight="39.0" prefWidth="125.0" styleClass="estiloBoton4" text="Inicio">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inicio-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button graphicTextGap="8.0" layoutX="337.0" layoutY="510.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="191.0" styleClass="estiloBoton5" text="Agregar Mascota">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/agregar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="pesoActualKgField" layoutX="249.0" layoutY="229.0" prefHeight="25.0" prefWidth="110.0" promptText="Peso en Kg" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="249.0" layoutY="256.0" prefHeight="3.0" prefWidth="101.0" />
+      <Label layoutX="221.0" layoutY="233.0" text="WT." />
+      <TextField fx:id="codigoClienteField" layoutX="398.0" layoutY="229.0" prefHeight="25.0" prefWidth="116.0" promptText="Codigo de cliente" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="398.0" layoutY="256.0" prefHeight="3.0" prefWidth="116.0" />
+      <Label layoutX="370.0" layoutY="233.0" text="C.C." />
+      <Button fx:id="btnAgregarConsulta" graphicTextGap="8.0" layoutX="528.0" layoutY="512.0" mnemonicParsing="false" onAction="#botonAgregarConsulta" prefHeight="39.0" prefWidth="191.0" styleClass="estiloBoton4" text="Agregar Consulta">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/agregar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarCita" graphicTextGap="8.0" layoutX="719.0" layoutY="511.0" mnemonicParsing="false" onAction="#botonAgregarCita" prefHeight="39.0" prefWidth="191.0" styleClass="estiloBoton4" text="Agregar Cita">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/agregar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="rootPane" layoutX="861.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleButtonPressBuscar" prefHeight="17.0" prefWidth="45.0" styleClass="estiloBoton2_0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/buscar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="861.0" layoutY="86.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="45.0" styleClass="estiloBoton2_0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/documento-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="codigoMascotaField" alignment="CENTER" layoutX="821.0" layoutY="51.0" prefHeight="25.0" prefWidth="32.0" />
+      <Button fx:id="rootPane" layoutX="563.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleButtonPressAgregarMascota" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Agregar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="749.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleButtonPressEditarMascota" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Modificar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="563.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonPressEliminarMascota" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="750.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonPressLimpiar" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TablaMascota" layoutX="34.0" layoutY="307.0" prefHeight="185.0" prefWidth="888.0">
+        <columns>
+          <TableColumn fx:id="codigoMascota" prefWidth="90.0" text="No. Mascota" />
+          <TableColumn fx:id="NombreMascota" prefWidth="110.0" text="Nombre Mascota" />
+            <TableColumn fx:id="Especie" prefWidth="90.0" text="Especie" />
+            <TableColumn fx:id="Raza" prefWidth="110.0" text="Raza" />
+            <TableColumn fx:id="Sexo" text="Sexo" />
+            <TableColumn fx:id="FechaNacimiento" prefWidth="140.0" text="Fecha de nacimiento" />
+            <TableColumn fx:id="Color" text="Color" />
+            <TableColumn fx:id="PesoActualKg" prefWidth="100.0" text="Peso en Kg" />
+            <TableColumn fx:id="CodigoCliente" prefWidth="89.0" text="C. cliente" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="fechaNacimientoPicker" layoutX="392.0" layoutY="187.0" prefHeight="25.0" prefWidth="123.0" promptText="Fec. de Nac." style="-fx-background-color: #00000000;" />
+   </children>
+</AnchorPane>

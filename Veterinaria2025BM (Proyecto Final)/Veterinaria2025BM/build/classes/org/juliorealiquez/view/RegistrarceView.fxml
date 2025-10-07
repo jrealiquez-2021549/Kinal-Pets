@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="957.0" stylesheets="@../resource/EsitlosCss.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juliorealiquez.controller.RegistrarController">
+   <children>
+      <ImageView fitHeight="556.0" fitWidth="957.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20(Registrarce)%202_Mesa%20de%20trabajo%201-01.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="140.0" layoutX="654.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/kinal%20pets_logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="590.0" layoutY="416.0" mnemonicParsing="false" onAction="#botonRegistrar" prefHeight="72.0" prefWidth="257.0" styleClass="estiloBoton1" text="Registrarce" />
+      <Button layoutX="681.0" layoutY="283.0" mnemonicParsing="false" onAction="#manejarBoton" prefHeight="62.0" prefWidth="75.0" styleClass="estiloBoton3_0">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Administrador%20gato_Mesa%20de%20trabajo%201.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="758.0" layoutY="283.0" mnemonicParsing="false" onAction="#manejarBoton" prefHeight="65.0" prefWidth="77.0" styleClass="estiloBoton3_0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Propietario%20gato_Mesa%20de%20trabajo%201.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="604.0" layoutY="283.0" mnemonicParsing="false" onAction="#manejarBoton" prefHeight="65.0" prefWidth="75.0" styleClass="estiloBoton3_0">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Empleado%20gato_Mesa%20de%20trabajo%201.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="739.0" layoutY="362.0" mnemonicParsing="false" onAction="#validarLlave" prefHeight="33.0" prefWidth="109.0" styleClass="estiloBoton2_0" text="Validar" />
+      <Label layoutX="171.0" layoutY="218.0" text="Kinal Pets" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="284.0" text="¡Registrate y se parte de nuestro equipó!" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="590.0" layoutY="153.0" prefHeight="33.0" prefWidth="257.0" promptText="Usuario" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="590.0" layoutY="185.0" prefHeight="4.0" prefWidth="257.0" />
+      <Separator layoutX="590.0" layoutY="227.0" prefHeight="4.0" prefWidth="257.0" />
+      <PasswordField fx:id="txtContrasenia" layoutX="590.0" layoutY="192.0" prefHeight="33.0" prefWidth="257.0" promptText="Contraseña" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="591.0" layoutY="267.0" prefHeight="4.0" prefWidth="257.0" />
+      <PasswordField fx:id="txtConfirmarContrasenia" layoutX="591.0" layoutY="232.0" prefHeight="33.0" prefWidth="257.0" promptText="Confirma la Contraseña" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="591.0" layoutY="397.0" prefHeight="4.0" prefWidth="142.0" />
+      <PasswordField fx:id="txtLlaveAcceso" layoutX="591.0" layoutY="362.0" prefHeight="33.0" prefWidth="142.0" promptText="Llave de acceso" style="-fx-background-color: #00000000;" />
+      <Button fx:id="btnVolver" layoutX="813.0" layoutY="51.0" mnemonicParsing="false" onAction="#botonVolver" prefHeight="30.0" prefWidth="44.0" styleClass="estiloBoton2">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inicio-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

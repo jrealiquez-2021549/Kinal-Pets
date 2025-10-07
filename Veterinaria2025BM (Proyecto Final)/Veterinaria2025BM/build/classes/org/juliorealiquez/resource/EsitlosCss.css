@@ -1,0 +1,472 @@
+
+/* Realizado por: Julio Gabriel Realiquez Noriega - 2021549 - IN5BM */
+
+/* Estilo botones 1 */
+.estiloBoton1 {
+    -fx-background-color: #eb6b32;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 28px;
+    /* Sombra inicial */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.4, 0, 2);
+    /* Estado inicial del botón */
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-translate-y: 0;
+    /* Esta línea no tiene efecto real en JavaFX CSS, pero la mantenemos como referencia visual */
+    -fx-transition: all 0.4s ease-in-out;
+}
+
+.estiloBoton1:hover {
+    -fx-background-color: #f28a5c;
+    /* Elevar el botón más suavemente */
+    -fx-translate-y: -2.5px;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.7, 0, 4);
+}
+
+.estiloBoton1:pressed {
+    -fx-background-color: #ba5629;
+    /* Simula que se hunde de manera suave */
+    -fx-translate-y: 0;
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 2, 0.2, 0, 1);
+}
+
+/* Estilo botones 2 */
+.estiloBoton2 {
+    -fx-background-color: #ca0b0b;
+    -fx-background-radius: 12;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 4px 8px;
+    /* Sombra inicial */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.4, 0, 2);
+    /* Estado inicial del botón */
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-translate-y: 0;
+    /* Esta línea no tiene efecto real en JavaFX CSS, pero la mantenemos como referencia visual */
+    -fx-transition: all 0.4s ease-in-out;
+}
+
+.estiloBoton2:hover {
+    -fx-background-color: #f50b0b;
+    /* Elevar el botón más suavemente */
+    -fx-translate-y: -2.5px;
+    -fx-scale-x: 0.99;
+    -fx-scale-y: 0.99;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.7, 0, 4);
+}
+
+.estiloBoton2:pressed {
+    -fx-background-color: #ac0505;
+    /* Simula que se hunde de manera suave */
+    -fx-translate-y: 0;
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 2, 0.2, 0, 1);
+}
+
+/* Estilo botones 2.0 */
+.estiloBoton2_0 {
+    -fx-background-color: #eb6b32;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 4px 8px;
+    /* Sombra inicial */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.4, 0, 2);
+    /* Estado inicial del botón */
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-translate-y: 0;
+    /* Esta línea no tiene efecto real en JavaFX CSS, pero la mantenemos como referencia visual */
+    -fx-transition: all 0.4s ease-in-out;
+}
+
+.estiloBoton2_0:hover {
+    -fx-background-color: #f28a5c;
+    /* Elevar el botón más suavemente */
+    -fx-translate-y: -2.5px;
+    -fx-scale-x: 0.99;
+    -fx-scale-y: 0.99;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.7, 0, 4);
+}
+
+.estiloBoton2_0:pressed {
+    -fx-background-color: #ba5629;
+    /* Simula que se hunde de manera suave */
+    -fx-translate-y: 0;
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 2, 0.2, 0, 1);
+}
+
+/* Estilo botones 3 */
+.estiloBoton3 {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-text-fill: #2188ab;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Lato', sans-serif;
+    -fx-font-size: 18px;
+    -fx-padding: 12px 28px;
+    /* Sombra inicial */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.4, 0, 2);
+    /* Estado inicial del botón */
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-translate-y: 0;
+    /* Esta línea no tiene efecto real en JavaFX CSS, pero la mantenemos como referencia visual */
+    -fx-transition: all 0.4s ease-in-out;
+}
+
+.estiloBoton3:hover {
+    -fx-background-color: #ffffff;
+    /* Elevar el botón más suavemente */
+    -fx-translate-y: -2.5px;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.7, 0, 4);
+}
+
+.estiloBoton3:pressed {
+    -fx-background-color: #e3e1e1;
+    /* Simula que se hunde de manera suave */
+    -fx-translate-y: 0;
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 2, 0.2, 0, 1);
+}
+
+/* Estilo botones 3_0 */
+.estiloBoton3_0 {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2188ab;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Lato', sans-serif;
+    -fx-font-size: 18px;
+    /* Sombra inicial */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.4, 0, 2);
+    /* Estado inicial del botón */
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-translate-y: 0;
+    /* Esta línea no tiene efecto real en JavaFX CSS, pero la mantenemos como referencia visual */
+    -fx-transition: all 0.4s ease-in-out;
+}
+
+.estiloBoton3_0:hover {
+    -fx-background-color: #ffffff;
+    /* Elevar el botón más suavemente */
+    -fx-translate-y: -2.5px;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.7, 0, 4);
+}
+
+.estiloBoton3_0:pressed {
+    -fx-background-color: #e3e1e1;
+    /* Simula que se hunde de manera suave */
+    -fx-translate-y: 0;
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 2, 0.2, 0, 1);
+}
+
+.estiloBoton3_0.activo {
+    -fx-background-color: #eb6b32;
+    -fx-text-fill: #ffffff;
+}
+
+/* Estilo botones 4 */
+.estiloBoton4 {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-color: #37a4c2;
+}
+
+.estiloBoton4:hover {
+    -fx-background-color: #2e8aa3;
+}
+
+.estiloBoton4:pressed {
+    -fx-background-color: #257085;
+}
+
+/* Estilo botones 5 */
+.estiloBoton5 {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-color: #2e8aa3;
+}
+
+.estiloBoton5:hover {
+    -fx-background-color: #216d85;
+}
+
+.estiloBoton5:pressed {
+    -fx-background-color: #216d85;
+}
+
+/* Estilo botones 6 */
+.estiloBoton6 {
+    -fx-text-fill: #37a4c2;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-color: #e3e1e1;
+}
+
+.estiloBoton6:hover {
+    -fx-background-color: #e8e8e8;
+}
+
+.estiloBoton6:pressed {
+    -fx-background-color: #ababab;
+}
+
+/* Estilo botones 7 */
+.estiloBoton7 {
+    -fx-text-fill: #37a4c2;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-color: #ffffff;
+}
+
+.estiloBoton7:hover {
+    -fx-background-color: #e8e8e8;
+}
+
+.estiloBoton7:pressed {
+    -fx-background-color: #ababab;
+}
+
+/* Fondo general del Table */
+.table-view {
+    -fx-background-color: white;
+    -fx-control-inner-background: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 12px;
+}
+
+/* Estilo para los encabezados de columna */
+.table-view .column-header-background {
+    -fx-background-color: #37a4c2;
+}
+
+.table-view .column-header,
+.table-view .column-header .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* Filas del contenido */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+/* Filas seleccionadas */
+.table-row-cell:selected {
+    -fx-background-color: #c1ecf5; /* Selección suave */
+    -fx-text-fill: black;
+}
+
+/* Texto dentro de las celdas */
+.table-cell {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Scrollbar personalizado (opcional) */
+.scroll-bar .thumb {
+    -fx-background-color: #37a4c2;
+    -fx-background-radius: 5px;
+}
+
+/* Estilo general del slider */
+.slider {
+    -fx-padding: 10px;
+    -fx-control-inner-background: transparent;
+}
+
+/* Línea del fondo del slider */
+.slider .track {
+    -fx-background-color: #cfcfcf;
+    -fx-background-radius: 5px;
+    -fx-pref-height: 8px;
+}
+
+/* Parte ya deslizada */
+.slider .filled-track {
+    -fx-background-color: #eb6b32;
+    -fx-background-radius: 5px;
+}
+
+/* Botón deslizante (thumb) */
+.slider .thumb {
+    -fx-background-color: #eb6b32;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0.3, 0, 2);
+    -fx-padding: 10px;
+}
+
+/* Hover sobre el thumb */
+.slider .thumb:hover {
+    -fx-background-color: #f28a5c;
+}
+
+/* Al presionar el thumb */
+.slider .thumb:pressed {
+    -fx-background-color: #ba5629;
+}
+
+.menuPersonalizado {
+    -fx-background-color: #eb6b32;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.4, 0, 2);
+}
+
+.menuPersonalizado:hover {
+    -fx-background-color: #f28a5c;
+    -fx-cursor: hand;
+}
+
+.menuPersonalizado:showing {
+    -fx-background-color: #ba5629;
+}
+
+.context-menu {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.7, 0, 4);
+}
+
+.context-menu .menu-item {
+    -fx-padding: 8px 16px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #eb6b32;
+    -fx-alignment: center;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: #f28a5c;
+    -fx-text-fill: white;
+}
+
+/* Estilo base del DatePicker */
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: transparent; /* Elimina contorno naranja */
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.4, 0, 1);
+}
+
+/* Elimina borde naranja cuando no está enfocado ni seleccionado */
+.date-picker:focused,
+.date-picker:armed,
+.date-picker:selected,
+.date-picker:showing {
+    -fx-border-color: #ba5629; /* Borde suave en interacción */
+    -fx-effect: none;
+}
+
+/* Hover */
+.date-picker:hover {
+    -fx-border-color: #f28a5c;
+}
+
+/* Botón del calendario (fondo naranja y signo blanco) */
+.date-picker .arrow-button {
+    -fx-background-color: #eb6b32;
+    -fx-background-radius: 0 8 8 0;
+}
+
+/* El icono del calendario (flecha) en blanco */
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+/* Hover del botón */
+.date-picker .arrow-button:hover {
+    -fx-background-color: #f28a5c;
+}
+
+/* Presionado */
+.date-picker .arrow-button:pressed {
+    -fx-background-color: #ba5629;
+}
+
+/* Popup general */
+.date-picker-popup {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.6, 0, 4);
+}
+
+/* Encabezado de navegación: fondo azul y texto blanco */
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #2188ab;
+}
+
+/* Texto del mes y año en blanco */
+.date-picker-popup > .month-year-pane > .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Flechas de navegación en blanco */
+.date-picker-popup .left-button,
+.date-picker-popup .right-button {
+    -fx-background-color: transparent;
+}
+
+.date-picker-popup .left-button .arrow,
+.date-picker-popup .right-button .arrow {
+    -fx-background-color: white;
+}
+
+/* Días de la semana */
+.date-picker-popup .day-name-cell {
+    -fx-background-color: #c1ecf5;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+/* Celdas de días normales */
+.date-cell {
+    -fx-text-fill: black;
+}
+
+.date-cell:hover {
+    -fx-background-color: #f28a5c;
+    -fx-text-fill: white;
+}
+
+.date-cell:focused {
+    -fx-background-color: #eb6b32;
+    -fx-text-fill: white;
+}
+
+.date-cell:selected {
+    -fx-background-color: #ba5629;
+    -fx-text-fill: white;
+}

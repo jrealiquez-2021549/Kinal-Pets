@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="957.0" stylesheets="@../resource/EsitlosCss.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juliorealiquez.controller.AgregarVacunacionController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="957.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Realizar%20Cita_Mesa%20de%20trabajo%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="139.0" layoutX="666.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/kinal%20pets_logo.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="fechaAplicacionPicker" layoutX="113.0" layoutY="148.0" prefHeight="27.0" prefWidth="174.0" promptText="Fecha de aplicación" style="-fx-background-color: #00000000;" />
+      <Label alignment="CENTER" layoutX="154.0" layoutY="65.0" text="Agregar Vacunación" textFill="#a34b24">
+         <font>
+            <Font name="Comic Sans MS Bold" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="113.0" layoutY="176.0" prefHeight="3.0" prefWidth="174.0" />
+      <TextField fx:id="codigoMascotaField" layoutX="113.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0" promptText="Mascota" style="-fx-background-color: #00000000;" />
+      <Label layoutX="80.0" layoutY="194.0" text="C.M." />
+      <Label layoutX="73.0" layoutY="153.0" text="Fech." />
+      <Separator layoutX="112.0" layoutY="215.0" prefHeight="3.0" prefWidth="174.0" />
+      <TextField fx:id="codigoVacunaField" layoutX="336.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0" promptText="Vacuna" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="334.0" layoutY="215.0" prefHeight="3.0" prefWidth="174.0" />
+      <Label layoutX="299.0" layoutY="192.0" text="C.Va." />
+      <TextField fx:id="observacionesField" layoutX="337.0" layoutY="147.0" prefHeight="25.0" prefWidth="174.0" promptText="Observación" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="335.0" layoutY="174.0" prefHeight="3.0" prefWidth="174.0" />
+      <Label layoutX="300.0" layoutY="151.0" text="Obs." />
+      <Label layoutX="130.0" layoutY="112.0" text="Rellene los siguientes aspectos de la vacunación:" textFill="#a34b24">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMusica" layoutX="912.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonMusica" prefHeight="39.0" prefWidth="36.0" style="-fx-background-color: #00000000;" styleClass="estiloBoton2">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/musica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarVacuna" alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="173.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonAgregarVacuna" prefHeight="39.0" prefWidth="159.0" styleClass="estiloBoton4" text="Ag. Vacuna">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inventario-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnVolver" graphicTextGap="14.0" layoutX="34.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonVolver" prefHeight="39.0" prefWidth="139.0" styleClass="estiloBoton4" text="Inicio">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inicio-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarMedicina" alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="331.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonAgregarMedicina" prefHeight="39.0" prefWidth="166.0" styleClass="estiloBoton4" text="Ag. Medicina">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inventario-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="497.0" layoutY="510.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="139.0" styleClass="estiloBoton5" text="Ag. Vax.">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inventario-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarTratamiento" alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="636.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonAgregarTratamiento" prefHeight="39.0" prefWidth="129.0" styleClass="estiloBoton4" text="Ag. Tto.">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inventario-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarReceta" alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="765.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonAgregarReceta" prefHeight="39.0" prefWidth="150.0" styleClass="estiloBoton4" text="Ag. Receta">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inventario-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="codigoVeterinarioField" layoutX="216.0" layoutY="230.0" prefHeight="25.0" prefWidth="174.0" promptText="Veterinario" style="-fx-background-color: #00000000;" />
+      <Label layoutX="175.0" layoutY="234.0" text="C.Ve." />
+      <Separator layoutX="215.0" layoutY="257.0" prefHeight="3.0" prefWidth="174.0" />
+      <TableView fx:id="TablaVacunacion" layoutX="34.0" layoutY="292.0" prefHeight="200.0" prefWidth="888.0">
+        <columns>
+          <TableColumn fx:id="codigoVacunacion" prefWidth="120.0" text="No. Vacunación" />
+          <TableColumn fx:id="FechaAplicacion" prefWidth="150.0" text="Fecha de aplicación" />
+            <TableColumn fx:id="Observaciones" prefWidth="286.0" text="Observaciones" />
+            <TableColumn fx:id="CodigoMascota" prefWidth="110.0" text="Cod. Mascota" />
+            <TableColumn fx:id="CodigoVacuna" prefWidth="110.0" text="Cod. Vacuna" />
+            <TableColumn fx:id="CodigoVeterinario" prefWidth="110.0" text="Cod. Veterinario" />
+        </columns>
+      </TableView>
+      <Button fx:id="rootPane" layoutX="861.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleButtonPressBuscar" prefHeight="17.0" prefWidth="45.0" styleClass="estiloBoton2_0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/buscar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="861.0" layoutY="84.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="45.0" styleClass="estiloBoton2_0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/documento-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="rootPane" layoutX="562.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleButtonPressAgregarVacunacion" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Agregar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="748.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleButtonPressEditarVacunacion" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Modificar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="562.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonPressEliminarVacunacion" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="749.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonPressLimpiar" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="codigoVacunacionField" alignment="CENTER" layoutX="823.0" layoutY="50.0" prefHeight="25.0" prefWidth="32.0" />
+   </children>
+</AnchorPane>

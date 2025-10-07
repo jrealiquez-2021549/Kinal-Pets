@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="957.0" stylesheets="@../resource/EsitlosCss.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juliorealiquez.controller.AgregarProveedorController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="957.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Realizar%20Cita_Mesa%20de%20trabajo%201.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nombreProveedorField" layoutX="116.0" layoutY="170.0" prefHeight="25.0" prefWidth="174.0" promptText="Nombre de proveedor" style="-fx-background-color: #00000000;" />
+      <Button fx:id="rootPane" layoutX="562.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleButtonPressAgregarProveedor" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Agregar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="748.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleButtonPressEditarProveedor" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Modificar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="562.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleButtonPressEliminarProveedor" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rootPane" layoutX="749.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleButtonPressLimpiar" prefHeight="49.0" prefWidth="159.0" styleClass="estiloBoton1" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="106.0" fitWidth="139.0" layoutX="666.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/kinal%20pets_logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="157.0" layoutY="76.0" text="Contratar Proveedor" textFill="#a34b24">
+         <font>
+            <Font name="Comic Sans MS Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="correoProveedorField" layoutX="333.0" layoutY="215.0" prefHeight="25.0" prefWidth="174.0" promptText="Correo electronico" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="331.0" layoutY="242.0" prefHeight="3.0" prefWidth="174.0" />
+      <Label layoutX="302.0" layoutY="219.0" text="C.E." />
+      <TextField fx:id="direccionProveedorField" layoutX="332.0" layoutY="168.0" prefHeight="25.0" prefWidth="174.0" promptText="Dirección" style="-fx-background-color: #00000000;" />
+      <Separator layoutX="330.0" layoutY="195.0" prefHeight="3.0" prefWidth="174.0" />
+      <Label layoutX="302.0" layoutY="172.0" text="Dir." />
+      <TextField fx:id="telefonoProveedorField" layoutX="119.0" layoutY="217.0" prefHeight="25.0" prefWidth="174.0" promptText="Teléfono" style="-fx-background-color: #00000000;" />
+      <Label layoutX="90.0" layoutY="221.0" text="Tel." />
+      <Separator layoutX="119.0" layoutY="244.0" prefHeight="3.0" prefWidth="174.0" />
+      <Label layoutX="145.0" layoutY="124.0" text="Rellene los siguientes aspectos del proveedor:" textFill="#a34b24">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMusica" layoutX="877.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonMusica" prefHeight="39.0" prefWidth="36.0" style="-fx-background-color: #00000000;" styleClass="estiloBoton2">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/musica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarVeterinario" alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="173.0" layoutY="511.0" mnemonicParsing="false" onAction="#botonAgregarVeterinario" prefHeight="39.0" prefWidth="228.0" styleClass="estiloBoton4" text="Contratar Veterinario">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/contratar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnVolver" graphicTextGap="14.0" layoutX="32.0" layoutY="511.0" mnemonicParsing="false" onAction="#botonVolver" prefHeight="39.0" prefWidth="139.0" styleClass="estiloBoton4" text="Inicio">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/inicio-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAgregarEmpleado" graphicTextGap="8.0" layoutX="401.0" layoutY="510.0" mnemonicParsing="false" onAction="#botonAgregarEmpleado" prefHeight="39.0" prefWidth="228.0" styleClass="estiloBoton4" text="Contratar Empleado">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/contratar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="BASELINE_LEFT" graphicTextGap="14.0" layoutX="629.0" layoutY="510.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="228.0" styleClass="estiloBoton5" text="Contratar Proveedor">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/contratar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="rootPane" layoutX="861.0" layoutY="49.0" mnemonicParsing="false" onAction="#handleButtonPressBuscar" prefHeight="17.0" prefWidth="45.0" styleClass="estiloBoton2_0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/buscar-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="TablaProveedor" layoutX="34.0" layoutY="307.0" prefHeight="185.0" prefWidth="888.0">
+        <columns>
+          <TableColumn fx:id="codigoProveedor" prefWidth="130.0" text="No. Proveedor" />
+          <TableColumn fx:id="NombreProveedor" prefWidth="170.0" text="Nombre Proveedor" />
+            <TableColumn fx:id="DireccionProveedor" prefWidth="220.0" text="Dirección" />
+            <TableColumn fx:id="TelefonoProveedor" prefWidth="150.0" text="Teléfono" />
+            <TableColumn fx:id="CorreoProveedor" prefWidth="220.0" text="Correo electronico" />
+        </columns>
+      </TableView>
+      <Separator layoutX="114.0" layoutY="197.0" prefHeight="3.0" prefWidth="174.0" />
+      <Label layoutX="74.0" layoutY="174.0" text="Nom." />
+      <Button layoutX="861.0" layoutY="88.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="45.0" styleClass="estiloBoton2_0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/documento-01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="codigoProveedorField" alignment="CENTER" layoutX="825.0" layoutY="52.0" prefHeight="25.0" prefWidth="32.0" />
+   </children>
+</AnchorPane>
